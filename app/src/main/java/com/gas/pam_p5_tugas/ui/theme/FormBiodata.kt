@@ -21,4 +21,5 @@ fun KontenUtama(modifier : Modifier){
     var email by remember { mutableStateOf("") }
     var tanggalLahir by remember { mutableStateOf("") }
     var pengalaman by remember { mutableStateOf("") }
+    var skill by remember { mutableStateOf(setOf<String>()) }
 }
