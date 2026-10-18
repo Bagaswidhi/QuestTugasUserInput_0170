@@ -163,6 +163,12 @@ fun KontenUtama(modifier : Modifier){
                             onValueChange = { textEmail = it }
                         )
                     }
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 5.dp, start = 20.dp, end = 20.dp, bottom = 10.dp),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ){}
                 }
             }
         }
