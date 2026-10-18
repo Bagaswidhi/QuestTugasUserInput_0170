@@ -8,4 +8,5 @@
     <string name="tglLahir">Tgl Lahir</string>
     <string name="pengalaman">Experience</string>
     <string name="skill">Pilih Skill Anda :</string>
+    <string name="simpan">Proceed</string>
 </resources>
