@@ -17,4 +17,5 @@ fun KontenUtama(modifier : Modifier){
     var textSkill by remember { mutableStateOf(setOf<String>()) }
 
     var namaDepan by remember { mutableStateOf("") }
+    var namaBelakang by remember { mutableStateOf("") }
 }
