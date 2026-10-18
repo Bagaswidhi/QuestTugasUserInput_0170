@@ -315,6 +315,43 @@ fun KontenUtama(modifier : Modifier){
                         )
                     }
                 }
+                if (showDatePicker){
+                    DatePickerDialog(
+                        onDismissRequest = {showDatePicker = false},
+                        confirmButton = {
+                            TextButton(onClick = {
+                                val selectedMillis = datePickerState.selectedDateMillis
+                                if(selectedMillis != null){
+                                    val formatter =
+                                        SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                                    textTanggalLahir = formatter.format(Date(selectedMillis))
+                                }
+                                showDatePicker = false
+                            }) {
+                                Text(
+                                    text = stringResource(id = R.string.ok),
+                                    color = colorResource(id = R.color.title_color)
+                                )
+                            }
+                        },
+                        dismissButton = {
+                            TextButton(onClick = {showDatePicker = false}){
+                                Text(
+                                    stringResource(R.string.batal),
+                                    color = colorResource(id = R.color.title_color)
+                                )
+                            }
+                        }
+                    ){
+                        DatePicker(
+                            state = datePickerState,
+                            colors = androidx.compose.material3.DatePickerDefaults.colors(
+                                selectedDayContainerColor = colorResource(id = R.color.outline_color),
+                                todayDateBorderColor = colorResource(id = R.color.title_color)
+                            )
+                        )
+                    }
+                }
             }
         }
     }
