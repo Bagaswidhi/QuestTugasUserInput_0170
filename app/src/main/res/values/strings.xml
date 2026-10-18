@@ -4,4 +4,5 @@
     <stirng name="caption">Silahkan isi biodata anda dibawah ini !!!</stirng>
     <stirng name="depan">Nama Depan</stirng>
     <string name="belakang">Nama Belakang</string>
+    <string name="email">Email</string>
 </resources>
