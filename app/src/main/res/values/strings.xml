@@ -6,4 +6,5 @@
     <string name="belakang">Nama Belakang</string>
     <string name="email">Email</string>
     <string name="tglLahir">Tgl Lahir</string>
+    <string name="pengalaman">Experience</string>
 </resources>
