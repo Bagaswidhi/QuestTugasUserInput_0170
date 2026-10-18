@@ -10,4 +10,5 @@ import androidx.compose.ui.Modifier
 @Composable
 fun KontenUtama(modifier : Modifier){
     var textNamaDepan by remember { mutableStateOf("") }
+    var textNamaBelakang by remember { mutableStateOf("") }
 }
