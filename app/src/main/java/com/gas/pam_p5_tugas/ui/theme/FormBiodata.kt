@@ -17,6 +17,8 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.DropdownMenuItem
@@ -35,6 +37,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
@@ -278,6 +282,26 @@ fun KontenUtama(modifier : Modifier){
                                 )
                             }
                         }
+                    }
+                    Button(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(start = 20.dp, end = 20.dp, bottom = 20.dp),
+                        enabled = isFormValid,
+                        onClick = {
+                            namaDepan = textNamaDepan
+                            namaBelakang = textNamaBelakang
+                            email = textEmail
+                            tanggalLahir = textTanggalLahir
+                            pengalaman = textPengalaman
+                            skill = textSkill
+                            isSubmitted = true
+                        },
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = colorResource(id = R.color.button_color),
+                            contentColor = colorResource(id = R.color.white)
+                        )
+                    ){
                     }
                 }
             }
