@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.Card
 import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -63,5 +65,11 @@ fun KontenUtama(modifier : Modifier){
                 .fillMaxWidth()
                 .height(260.dp)
         )
+        LazyColumn(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            item {
+            }
+        }
     }
 }
