@@ -36,4 +36,12 @@ fun KontenUtama(modifier : Modifier){
 
     var expandedDropdown by remember { mutableStateOf(false) }
     var isSubmitted by remember { mutableStateOf(false) }
+
+    // validasi
+    val isFormValid = textNamaDepan.isNotEmpty() &&
+            textNamaBelakang.isNotEmpty() &&
+            textEmail.isNotEmpty() &&
+            textTanggalLahir.isNotEmpty() &&
+            textPengalaman.isNotEmpty() &&
+            textSkill.isNotEmpty()
 }
