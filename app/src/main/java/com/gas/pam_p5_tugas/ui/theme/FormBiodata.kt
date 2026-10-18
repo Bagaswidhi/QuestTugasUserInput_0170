@@ -4,6 +4,7 @@ import android.view.RoundedCorner
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -305,7 +306,7 @@ fun KontenUtama(modifier : Modifier){
                             isSubmitted = true
                         },
                         colors = ButtonDefaults.buttonColors(
-                            containerColor = colorResource(id = R.color.button_color),
+                            containerColor = colorResource(id = R.color.green),
                             contentColor = colorResource(id = R.color.white)
                         )
                     ){
@@ -350,6 +351,55 @@ fun KontenUtama(modifier : Modifier){
                                 todayDateBorderColor = colorResource(id = R.color.title_color)
                             )
                         )
+                    }
+                }
+            }
+            if (isSubmitted) {
+                item {
+                    Card(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(20.dp),
+                        shape = RoundedCornerShape(16.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = colorResource(id = R.color.black)
+                        ),
+                        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(20.dp),
+                            verticalArrangement = Arrangement.spacedBy(8.dp)
+                        ){
+                            Text(
+                                stringResource(R.string.DataTersimpan),
+                                fontSize = 20.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = colorResource(id = R.color.white),
+                                modifier = Modifier.padding(bottom = 8.dp)
+                            )
+                            Text(
+                                stringResource(R.string.Nama_Card) + " $namaDepan $namaBelakang",
+                                color = colorResource(id = R.color.white)
+                            )
+                            Text(
+                                stringResource(R.string.Email_Card) + " $email",
+                                color = colorResource(id = R.color.white)
+                            )
+                            Text(
+                                stringResource(R.string.TanggalLahir_Card) + " $tanggalLahir",
+                                color = colorResource(id = R.color.white)
+                            )
+                            Text(
+                                stringResource(R.string.Pengalaman_Card) + " $pengalaman",
+                                color = colorResource(id = R.color.white)
+                            )
+                            Text(
+                                stringResource(R.string.Keahlian_Card) + " ${skill.joinToString(", ")}",
+                                color = colorResource(id = R.color.white)
+                            )
+                        }
                     }
                 }
             }
