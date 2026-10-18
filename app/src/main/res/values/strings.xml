@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">PAM_P5_Tugas</string>
     <string name="judul">Form Biodata</string>
-    <stirng name="caption">Silahkan isi biodata anda dibawah ini !!!</stirng>
-    <stirng name="depan">Nama Depan</stirng>
+    <string name="caption">Silahkan isi biodata anda dibawah ini !!!</string>
+    <string name="depan">Nama Depan</string>
     <string name="belakang">Nama Belakang</string>
     <string name="email">Email</string>
     <string name="tglLahir">Tgl Lahir</string>

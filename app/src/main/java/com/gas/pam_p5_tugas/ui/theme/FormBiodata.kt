@@ -13,6 +13,9 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
@@ -117,7 +120,14 @@ fun KontenUtama(modifier : Modifier){
                             .padding(top = 24.dp, start = 20.dp, end = 20.dp, bottom = 5.dp),
                         horizontalArrangement = Arrangement.spacedBy(10.dp)
                     ){
-
+                        OutlinedTextField(
+                            value = textNamaDepan,
+                            singleLine = true,
+                            label = { Text(stringResource(R.string.depan)) },
+                            shape = MaterialTheme.shapes.large,
+                            modifier = Modifier.weight(1f),
+                            onValueChange = { textNamaDepan = it }
+                        )
                     }
                 }
             }
