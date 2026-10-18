@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">PAM_P5_Tugas</string>
     <string name="judul">Form Biodata</string>
+    <stirng name="caption">Silahkan isi biodata anda dibawah ini !!!</stirng>
 </resources>
