@@ -145,6 +145,13 @@ fun KontenUtama(modifier : Modifier){
                             onValueChange = { textNamaBelakang = it }
                         )
                     }
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 5.dp, start = 20.dp, end = 20.dp, bottom = 5.dp)
+                    ){
+
+                    }
                 }
             }
         }
