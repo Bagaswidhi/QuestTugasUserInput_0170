@@ -2,7 +2,9 @@ package com.gas.pam_p5_tugas.ui.theme
 
 import android.view.RoundedCorner
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -108,6 +110,15 @@ fun KontenUtama(modifier : Modifier){
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center
                     )
+
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 24.dp, start = 20.dp, end = 20.dp, bottom = 5.dp),
+                        horizontalArrangement = Arrangement.spacedBy(10.dp)
+                    ){
+
+                    }
                 }
             }
         }
