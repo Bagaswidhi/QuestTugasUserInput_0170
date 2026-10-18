@@ -10,4 +10,5 @@
     <color name="title_color">#5B2C6F</color>
     <color name="outline_color">#5B2C6F</color>
     <color name="button_color">#E0E0E0</color>
+    <color name="green">#2E6F40</color>
 </resources>
