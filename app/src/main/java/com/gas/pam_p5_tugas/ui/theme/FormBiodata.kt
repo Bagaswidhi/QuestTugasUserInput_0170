@@ -19,6 +19,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
+import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -203,7 +204,20 @@ fun KontenUtama(modifier : Modifier){
                             onExpandedChange = { expandedDropdown = !expandedDropdown },
                             modifier = Modifier.weight(1f)
                         ){
-
+                            OutlinedTextField(
+                                value = textPengalaman,
+                                onValueChange = {},
+                                readOnly = true,
+                                label = { Text(stringResource(R.string.pengalaman)) },
+                                shape = MaterialTheme.shapes.large,
+                                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedDropdown) },
+                                colors = OutlinedTextFieldDefaults.colors(
+                                    focusedBorderColor = colorResource(id = R.color.outline_color),
+                                    focusedLabelColor = colorResource(id = R.color.outline_color)
+                                ),
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                            )
                         }
                     }
                 }
