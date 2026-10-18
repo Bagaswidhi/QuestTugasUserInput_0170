@@ -33,4 +33,7 @@ fun KontenUtama(modifier : Modifier){
 
     var showDatePicker by remember { mutableStateOf(false) }
     val datePickerState = rememberDatePickerState()
+
+    var expandedDropdown by remember { mutableStateOf(false) }
+    var isSubmitted by remember { mutableStateOf(false) }
 }
