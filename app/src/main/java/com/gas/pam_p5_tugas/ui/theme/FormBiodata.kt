@@ -17,6 +17,8 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -39,6 +41,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.gas.pam_p5_tugas.R
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun KontenUtama(modifier : Modifier){
     // sementara
@@ -194,6 +197,14 @@ fun KontenUtama(modifier : Modifier){
                                 }
                             }
                         )
+
+                        ExposedDropdownMenuBox(
+                            expanded = expandedDropdown,
+                            onExpandedChange = { expandedDropdown = !expandedDropdown },
+                            modifier = Modifier.weight(1f)
+                        ){
+
+                        }
                     }
                 }
             }
