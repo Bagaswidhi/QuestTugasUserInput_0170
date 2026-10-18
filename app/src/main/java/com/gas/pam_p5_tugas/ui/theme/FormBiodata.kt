@@ -1,5 +1,7 @@
 package com.gas.pam_p5_tugas.ui.theme
 
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.rememberDatePickerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -44,4 +46,9 @@ fun KontenUtama(modifier : Modifier){
             textTanggalLahir.isNotEmpty() &&
             textPengalaman.isNotEmpty() &&
             textSkill.isNotEmpty()
+    Box(
+        modifier = modifier.fillMaxSize()
+    ){
+
+    }
 }
