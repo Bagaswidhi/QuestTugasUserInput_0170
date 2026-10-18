@@ -126,7 +126,23 @@ fun KontenUtama(modifier : Modifier){
                             label = { Text(stringResource(R.string.depan)) },
                             shape = MaterialTheme.shapes.large,
                             modifier = Modifier.weight(1f),
+                            colors = OutlinedTextFieldDefaults.colors(
+                                focusedBorderColor = colorResource(id = R.color.outline_color),
+                                focusedLabelColor = colorResource(id = R.color.outline_color)
+                            ),
                             onValueChange = { textNamaDepan = it }
+                        )
+                        OutlinedTextField(
+                            value = textNamaBelakang,
+                            singleLine = true,
+                            label = { Text(stringResource(R.string.belakang)) },
+                            shape = MaterialTheme.shapes.large,
+                            modifier = Modifier.weight(1f),
+                            colors = OutlinedTextFieldDefaults.colors(
+                                focusedBorderColor = colorResource(id = R.color.outline_color),
+                                focusedLabelColor = colorResource(id = R.color.outline_color)
+                            ),
+                            onValueChange = { textNamaBelakang = it }
                         )
                     }
                 }
