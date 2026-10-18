@@ -236,6 +236,16 @@ fun KontenUtama(modifier : Modifier){
                             }
                         }
                     }
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 10.dp, start = 25.dp, end = 20.dp)
+                    ){
+                        Text(
+                            text = stringResource(R.string.skill),
+                            fontWeight = FontWeight.Bold
+                        )
+                    }
                 }
             }
         }
