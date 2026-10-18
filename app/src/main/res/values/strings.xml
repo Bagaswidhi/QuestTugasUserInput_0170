@@ -11,4 +11,10 @@
     <string name="simpan">Proceed</string>
     <string name="ok">OK</string>
     <string name="batal">Cancel</string>
+    <string name="DataTersimpan">Data Biodata Tersimpan</string>
+    <string name="Nama_Card">Nama :</string>
+    <string name="Email_Card">Email :</string>
+    <string name="TanggalLahir_Card">Tanggal Lahir :</string>
+    <string name="Pengalaman_Card">Experience :</string>
+    <string name="Keahlian_Card">Skill :</string>
 </resources>
