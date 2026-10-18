@@ -5,4 +5,5 @@
     <stirng name="depan">Nama Depan</stirng>
     <string name="belakang">Nama Belakang</string>
     <string name="email">Email</string>
+    <string name="tglLahir">Tgl Lahir</string>
 </resources>
