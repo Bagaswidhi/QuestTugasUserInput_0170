@@ -1,13 +1,13 @@
 package com.gas.pam_p5_tugas.ui.theme
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.R
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringArrayResource
+import com.gas.pam_p5_tugas.R
 
 @Composable
 fun KontenUtama(modifier : Modifier){
@@ -27,4 +27,6 @@ fun KontenUtama(modifier : Modifier){
     var pengalaman by remember { mutableStateOf("") }
     var skill by remember { mutableStateOf(setOf<String>()) }
 
+    val listPengalaman = stringArrayResource(id = R.array.listPengalaman)
+    val listSkill = stringArrayResource(id = R.array.listSkill)
 }
