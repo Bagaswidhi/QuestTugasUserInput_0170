@@ -3,4 +3,5 @@
     <string name="judul">Form Biodata</string>
     <stirng name="caption">Silahkan isi biodata anda dibawah ini !!!</stirng>
     <stirng name="depan">Nama Depan</stirng>
+    <string name="belakang">Nama Belakang</string>
 </resources>
