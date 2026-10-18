@@ -9,4 +9,6 @@
     <string name="pengalaman">Experience</string>
     <string name="skill">Pilih Skill Anda :</string>
     <string name="simpan">Proceed</string>
+    <string name="ok">OK</string>
+    <string name="batal">Cancel</string>
 </resources>
